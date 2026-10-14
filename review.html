@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1226">
+  <title>Ulasan Pelanggan | PixelValln SHOP</title>
+  <link rel="stylesheet" href="style.css">
+
+<!-- PixelValln SHOP Favicon -->
+<link rel="icon" type="image/jpeg" href="./lg.png">
+<link rel="shortcut icon" type="image/jpeg" href="./lg.png">
+
+</head>
+<body>
+  <header class="wrap content">
+    <h1>PixelValln SHOP</h1>
+    <p>Bagikan pengalaman belanjamu!</p>
+    <a href="index.html">← Kembali ke toko</a>
+  </header>
+
+  <main id="reviewPage" class="wrap content"></main>
+
+  <footer class="wrap content">
+    <p>© PixelValln SHOP</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="reviews.js"></script>
+<script>
+/* PixelValln SHOP: branded intro on every full page load */
+(function(){
+  if (document.querySelector('.pv-intro-splash')) return;
+  var splash=document.createElement('div');
+  splash.className='pv-intro-splash';
+  splash.setAttribute('role','status');
+  splash.setAttribute('aria-label','Memuat PixelValln SHOP');
+  splash.innerHTML='<div class="pv-intro-inner"><div class="pv-intro-logo-wrap"><img class="pv-intro-logo" src="./lg.png" alt="PixelValln SHOP"></div><div class="pv-intro-title">PixelValln <span>SHOP</span></div><div class="pv-intro-tagline">Digital Goods · Instant Experience</div><div class="pv-intro-progress" aria-hidden="true"><span></span></div></div>';
+  document.body.appendChild(splash);
+  var start=Date.now();
+  function hide(){
+    var delay=Math.max(0,1050-(Date.now()-start));
+    window.setTimeout(function(){splash.classList.add('is-hidden');window.setTimeout(function(){splash.remove();},480);},delay);
+  }
+  if(document.readyState==='complete') hide();
+  else window.addEventListener('load',hide,{once:true});
+  window.setTimeout(hide,2600);
+})();
+</script>
+</body>
+</html>

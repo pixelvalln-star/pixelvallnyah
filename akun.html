@@ -1,0 +1,163 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#100a24"><title>Akun Saya — PixelValln SHOP</title><link rel="stylesheet" href="style.css"><link rel="icon" href="./lg.png"><style>
+:root{--acc-red:#bd8bff;--acc-red-dark:#8e9dff;--acc-panel:#201638;--acc-panel2:#100b20;--acc-line:#d8b4ff25;--acc-muted:#c1b4d7}body.account-page{background:#080619;color:#fff9ff}body.account-page:before{opacity:.12;background-size:40px 40px}.account-shell{width:min(1320px,calc(100% - 34px));margin:26px auto 70px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:28px;align-items:start}.account-sidebar{position:sticky;top:94px;background:#100b20;border:1px solid #d8b4ff25;border-radius:4px;padding:18px 12px;min-height:550px}.account-user{display:flex;align-items:center;gap:12px;padding:6px 8px 20px;border-bottom:1px solid #d8b4ff25;margin-bottom:12px;min-width:0}.account-avatar{position:relative;overflow:hidden;width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#a8efff,#bd8bff 55%,#ff9cda);display:grid;place-items:center;font-weight:900;font-size:18px;flex:0 0 48px;box-shadow:0 5px 18px #bd8bff22}.account-avatar img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}.account-user strong{display:block;font-size:13px;overflow:hidden;text-overflow:ellipsis}.account-user small{display:block;color:#8f8794;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:140px;margin-top:5px}.account-nav{display:grid;gap:5px}.account-nav button{display:flex;align-items:center;gap:12px;text-align:left;padding:11px 12px;background:transparent;border:1px solid transparent;color:#aaa3af;border-radius:11px;font:600 13px system-ui;cursor:pointer}.account-nav button:hover,.account-nav button.active{background:#bd8bff18;border-color:#bd8bff66;color:#e2caff}.account-main{min-width:0}.account-heading{margin:0 0 24px}.account-heading h1{font-size:clamp(27px,3vw,36px);letter-spacing:-1.2px;margin:0 0 5px}.account-heading p{color:var(--acc-muted);font-size:13px;margin:0}.account-section[hidden]{display:none}.account-panel{background:var(--acc-panel);border:1px solid var(--acc-line);border-radius:20px;padding:24px;margin-bottom:16px}.account-panel h2{font-size:17px;margin:0 0 6px}.account-panel>p{color:var(--acc-muted);font-size:12px;line-height:1.6;margin:0 0 18px}.account-tabs{display:flex;gap:7px;padding:5px;background:var(--acc-panel);border:1px solid var(--acc-line);border-radius:999px;margin-bottom:18px;width:max-content;max-width:100%}.account-tabs button,.filter-btn{border:1px solid transparent;border-radius:999px;padding:9px 15px;background:transparent;color:#aaa3af;font:600 12px system-ui;cursor:pointer}.account-tabs button.active,.filter-btn.active{background:var(--acc-red);color:white}.account-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-bottom:16px}.account-stat{padding:18px;border:1px solid var(--acc-line);background:linear-gradient(145deg,#191517,#100e0f);border-radius:16px}.account-stat small{color:#a39ba7;font-size:11px}.account-stat strong{display:block;font-size:25px;margin-top:9px;overflow-wrap:anywhere}.account-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.account-fields label,.wallet-form label{display:grid;gap:7px;color:#a9a1ad;font-size:10px;font-weight:800;letter-spacing:.08em}.account-fields input,.wallet-form input,.wallet-form select,.account-search{width:100%;box-sizing:border-box;border:1px solid #352c30;background:#100e0f;color:#f8f5f6;border-radius:10px;padding:12px;font:13px system-ui;min-width:0}.account-fields input:disabled{color:#928b96;opacity:.8}.account-help{font-size:11px!important;color:#8f8794!important;margin:6px 0 0!important}.account-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px;padding-top:18px;border-top:1px solid var(--acc-line)}.account-btn{border:0;border-radius:999px;padding:11px 17px;background:var(--acc-red);color:white;font:800 12px system-ui;cursor:pointer}.account-btn:hover{background:#a98be9}.account-btn.secondary{background:#21143a;border:1px solid #d8b4ff35;color:#f7f0ff}.account-message{font-size:12px;line-height:1.6;margin-top:12px;color:#7cf5c2}.account-message.error{color:#ff7f8a}.account-table-wrap{overflow:auto;border:1px solid var(--acc-line);border-radius:15px}.account-table{width:100%;min-width:680px;border-collapse:collapse}.account-table th,.account-table td{text-align:left;padding:14px;border-bottom:1px solid var(--acc-line);font-size:12px;vertical-align:middle}.account-table th{color:#8d8492;text-transform:uppercase;font-size:10px;letter-spacing:.08em}.account-table tr:last-child td{border-bottom:0}.account-table td small{display:block;color:#8d8492;margin-top:5px}.status-chip{display:inline-block;border-radius:999px;padding:6px 10px;font-size:10px;font-weight:800;background:#392d18;color:#ffd98a;white-space:nowrap}.status-chip.good{background:#153326;color:#70efad}.status-chip.bad{background:#3b171a;color:#ff8a92}.account-toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:14px}.account-search{max-width:330px}.filter-row{display:flex;gap:5px;flex-wrap:wrap}.wallet-form{display:grid;grid-template-columns:1fr 1fr;gap:15px}.wallet-notice img{display:block;width:min(100%,260px);height:auto;background:#fff;padding:8px;border-radius:12px;margin:12px auto}.wallet-notice .account-btn{margin-top:8px}.wallet-notice{border:1px solid #8e70b8;background:#2b2038;color:#e5d8ff;border-radius:12px;padding:13px;font-size:12px;line-height:1.6;margin:15px 0}.wallet-balance{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:22px;border:1px solid #bd8bff55;background:radial-gradient(ellipse at right,#8e9dff35,transparent 55%),linear-gradient(135deg,#281843,#14102a);border-radius:18px;margin-bottom:16px}.wallet-balance small{display:block;color:#c6aeb2;font-size:11px}.wallet-balance strong{display:block;font-size:clamp(26px,4vw,36px);margin-top:5px}.wallet-balance .account-avatar{width:55px;height:55px}.empty-state{padding:30px;text-align:center;color:#928b96;font-size:13px}.account-mobile-top{display:none}.promo-help{color:#8f8794;font-size:11px;line-height:1.6}.account-loader{padding:25px;color:#aaa3af}.account-top-link{color:#ff5a61;font-size:12px;font-weight:800}
+@media(max-width:800px){.account-shell{grid-template-columns:1fr;gap:18px;margin-top:16px}.account-sidebar{position:static;min-height:0;padding:12px}.account-user{padding-bottom:12px;margin-bottom:9px}.account-nav{display:flex;overflow:auto}.account-nav button{white-space:nowrap}.account-nav button span:last-child{display:inline}.account-grid{grid-template-columns:1fr 1fr}.account-panel{padding:18px}.account-mobile-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.account-fields{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.account-shell{width:calc(100% - 22px)}.account-grid{grid-template-columns:1fr}.account-fields,.wallet-form{grid-template-columns:1fr}.account-heading h1{font-size:27px}.account-panel{border-radius:15px;padding:15px}.account-tabs{width:100%;justify-content:space-between}.account-tabs button{padding:9px 12px}.account-stat strong{font-size:22px}.wallet-balance{padding:17px}.account-nav button{font-size:11px;padding:10px}.account-user small{max-width:180px}}
+.profile-photo-row{display:flex;align-items:center;gap:18px}.profile-avatar-preview{width:90px;height:90px;flex:0 0 90px;font-size:28px}.profile-photo-controls{display:grid;gap:10px;min-width:0}.profile-photo-controls input{max-width:100%;font-size:12px;color:var(--acc-muted)}.profile-photo-controls .account-message{margin:0}@media(max-width:520px){.profile-photo-row{align-items:flex-start;flex-direction:column}}
+
+/* === PIXELVALLN SHOP ACCOUNT: BLUE/CYAN GLASS REDESIGN === */
+body.account-page{
+  --acc-red:#079fe0;--acc-red-dark:#087db8;--acc-panel:#ffffff;--acc-panel2:#f3fbff;
+  --acc-line:#b8e7f8;--acc-muted:#58758a;
+  background:radial-gradient(ellipse at 12% 0%,rgba(69,205,255,.18),transparent 42%),linear-gradient(180deg,#e9faff 0%,#f5fbff 50%,#eaf8ff 100%);
+  color:#153b55;min-height:100vh;
+}
+body.account-page:before{opacity:.08;background-size:34px 34px}
+.account-page header{background:rgba(239,251,255,.82);border:1px solid rgba(123,211,241,.65);box-shadow:0 10px 35px rgba(21,115,157,.10);backdrop-filter:blur(18px);border-radius:18px;margin:12px auto 0;width:min(1320px,calc(100% - 28px));position:sticky;top:8px;z-index:30}
+.account-page header .wrap.nav{max-width:none}
+.account-page .brand-name{color:#123c59}
+.account-page .brand-name em{color:#078fc9}
+.account-page .links a{color:#214f6b}
+.account-page .links a:hover{color:#008fc9}
+.account-page .nav-cta{background:linear-gradient(110deg,#078ed0,#23c7e8);color:white;border:1px solid rgba(255,255,255,.55);box-shadow:0 5px 14px rgba(0,157,214,.18)}
+.account-shell{width:min(1320px,calc(100% - 34px));margin:24px auto 70px;grid-template-columns:250px minmax(0,1fr);gap:22px}
+.account-sidebar{background:rgba(255,255,255,.86);border:1px solid #b9e7f7;border-radius:20px;padding:16px 12px;min-height:550px;box-shadow:0 14px 38px rgba(25,111,150,.09);backdrop-filter:blur(14px)}
+.account-user{border-bottom-color:#d9eff8}
+.account-avatar{background:linear-gradient(135deg,#d7f7ff,#58d4f2 52%,#078fd0);color:#fff;box-shadow:0 6px 18px #0a9dd326}
+.account-user strong{color:#123e5a}
+.account-user small{color:#69869a}
+.account-nav button{color:#55758b;border-radius:12px;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.account-nav button:hover,.account-nav button.active{background:linear-gradient(110deg,#dff7ff,#c7f1ff);border-color:#8dddf5;color:#056f9f}
+.account-main{min-width:0}
+.account-heading{margin:2px 0 20px}
+.account-heading h1{color:#123c58;font-weight:850;letter-spacing:-1px}
+.account-heading p{color:#5e7c90}
+.account-panel{background:rgba(255,255,255,.9);border:1px solid #bde8f7;border-radius:20px;padding:24px;box-shadow:0 12px 34px rgba(28,119,156,.08)}
+.account-panel h2{color:#164866}
+.account-panel>p{color:#638196}
+.account-grid{gap:13px}
+.account-stat{background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(225,247,255,.94));border:1px solid #b8e7f8;border-radius:18px;box-shadow:0 8px 24px rgba(31,133,174,.07)}
+.account-stat small{color:#648399}
+.account-stat strong{color:#078ac3}
+.account-fields label,.wallet-form label{color:#4d7188}
+.account-fields input,.wallet-form input,.wallet-form select,.account-search{border:1px solid #b9dce9;background:#f8fdff;color:#153b55;border-radius:11px;outline:none;transition:border-color .15s,box-shadow .15s}
+.account-fields input:focus,.wallet-form input:focus,.wallet-form select:focus,.account-search:focus{border-color:#17b9e8;box-shadow:0 0 0 3px rgba(23,185,232,.13)}
+.account-fields input:disabled{background:#edf7fb;color:#6c8797}
+.account-help,.promo-help{color:#7290a1!important}
+.account-actions{border-top-color:#d9eff8}
+.account-btn{background:linear-gradient(110deg,#078ed0,#20c4e5);color:#fff;box-shadow:0 5px 13px rgba(0,151,208,.15);transition:transform .15s,filter .15s}
+.account-btn:hover{background:linear-gradient(110deg,#057db9,#12acd2);filter:brightness(1.03);transform:translateY(-1px)}
+.account-btn.secondary{background:#f1fbff;border:1px solid #a8dff2;color:#176081;box-shadow:none}
+.account-btn.secondary:hover{background:#ddf6ff}
+.account-message{color:#087d58}
+.account-message.error{color:#c3374a}
+.account-table-wrap{border-color:#c5e8f4;background:#fff}
+.account-table{background:rgba(255,255,255,.92)}
+.account-table th,.account-table td{border-bottom-color:#e1f1f7;color:#31566d}
+.account-table th{color:#658397;background:#f1faff}
+.account-table td small{color:#7c97a7}
+.status-chip{background:#fff3d7;color:#8b5c00}
+.status-chip.good{background:#d9f9e9;color:#087a4d}
+.status-chip.bad{background:#ffe6e9;color:#b72c42}
+.account-tabs{background:#f1faff;border-color:#c0e7f5}
+.account-tabs button,.filter-btn{color:#55788e}
+.account-tabs button.active,.filter-btn.active{background:linear-gradient(110deg,#078ed0,#23c7e8);color:white;box-shadow:0 4px 12px rgba(0,153,207,.15)}
+.wallet-balance{border:1px solid #8ddcf3;background:radial-gradient(ellipse at right,rgba(47,202,237,.28),transparent 58%),linear-gradient(135deg,#e0f8ff,#bfefff);color:#123f5b;box-shadow:0 10px 26px rgba(30,139,177,.10)}
+.wallet-balance small{color:#547b91}
+.wallet-balance strong{color:#057fb6}
+.wallet-notice{border:1px solid #a7dff0;background:#effaff;color:#315c72}
+.empty-state,.account-loader{color:#6c8a9c}
+.account-top-link{color:#078bc3}
+.profile-photo-controls input{color:#5b7b90}
+.profile-avatar-preview{border:3px solid white;box-shadow:0 0 0 1px #9cdef1,0 8px 22px rgba(15,132,178,.14)}
+.account-section[hidden]{display:none!important}
+.account-mobile-top{color:#087eae}
+#accountLogout{color:#b33e50}
+#accountLogout:hover{background:#fff0f2;border-color:#ffd0d7;color:#a82b40}
+@media(max-width:800px){
+ .account-page header{position:relative;top:auto;width:calc(100% - 18px);margin:9px auto 0;border-radius:15px}
+ .account-page header .wrap.nav{gap:10px;flex-wrap:wrap;padding:10px 12px}
+ .account-page .links{gap:12px;flex-wrap:wrap}
+ .account-shell{width:calc(100% - 20px);grid-template-columns:minmax(0,1fr);gap:14px;margin:16px auto 40px}
+ .account-sidebar{position:relative;top:auto;min-height:0;padding:12px;border-radius:17px}
+ .account-user{padding:4px 4px 12px;margin-bottom:10px}
+ .account-nav{display:flex;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding-bottom:3px;gap:6px}
+ .account-nav button{flex:0 0 auto;white-space:nowrap;padding:10px 12px;font-size:12px}
+ .account-nav button span:last-child{display:inline}
+ .account-heading{margin:0 2px 14px}
+ .account-heading h1{font-size:clamp(25px,6vw,32px)}
+ .account-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .account-grid .account-stat:last-child{grid-column:1/-1}
+ .account-panel{padding:17px;border-radius:17px}
+ .account-toolbar{align-items:stretch}
+ .account-search{max-width:none;flex:1 1 100%}
+ .filter-row{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+ .filter-btn{flex:0 0 auto;white-space:nowrap}
+ .account-table{min-width:620px}
+}
+@media(max-width:520px){
+ .account-page header .wrap.nav{align-items:center}
+ .account-page .brand img{width:34px;height:34px;object-fit:contain}
+ .account-page .brand-name{font-size:13px}
+ .account-page .links{order:3;width:100%;justify-content:flex-start;gap:17px;padding:2px 3px 5px}
+ .account-page .links a{font-size:12px}
+ .account-page .nav-actions{margin-left:auto}
+ .account-page .nav-cta{font-size:11px;padding:9px 12px}
+ .account-shell{width:calc(100% - 16px);margin-top:12px}
+ .account-user strong{font-size:12px}
+ .account-user small{max-width:calc(100vw - 110px)}
+ .account-nav button{font-size:11px;padding:9px 10px;gap:7px}
+ .account-grid{grid-template-columns:1fr 1fr;gap:9px}
+ .account-grid .account-stat:last-child{grid-column:auto}
+ .account-stat{padding:13px;border-radius:14px}
+ .account-stat small{font-size:10px}
+ .account-stat strong{font-size:clamp(17px,5vw,22px);margin-top:6px}
+ .account-panel{padding:14px;border-radius:15px;margin-bottom:12px}
+ .account-panel h2{font-size:16px}
+ .account-panel>p{font-size:12px}
+ .account-fields,.wallet-form{grid-template-columns:minmax(0,1fr)}
+ .account-fields label,.wallet-form label{font-size:10px}
+ .account-actions{gap:8px}
+ .account-btn{padding:11px 13px;font-size:11px}
+ .account-tabs{overflow-x:auto;justify-content:flex-start;width:100%;border-radius:13px}
+ .account-tabs button{flex:0 0 auto;padding:9px 11px}
+ .wallet-balance{padding:15px;border-radius:15px}
+ .wallet-balance strong{font-size:26px}
+ .profile-photo-row{flex-direction:row;align-items:center;gap:13px}
+ .profile-avatar-preview{width:72px;height:72px;flex-basis:72px}
+ .profile-photo-controls{flex:1}
+ .profile-photo-controls .account-btn{width:100%}
+ .account-table th,.account-table td{padding:11px;font-size:11px}
+ .empty-state{padding:22px 12px}
+}
+@media(prefers-reduced-motion:reduce){.account-btn,.account-nav button{transition:none}}
+
+</style></head><body class="account-page"><header><div class="wrap nav"><a href="index.html" class="brand"><img src="logo.jpg" alt="PixelValln SHOP"><span class="brand-name">PixelValln <em>SHOP</em></span></a><nav class="links"><a href="index.html#games">Pilih Game</a><a href="index.html#topup">Daftar Harga</a></nav><div class="nav-actions"><a class="nav-cta" href="index.html#games">Belanja ↗</a></div></div></header>
+<div class="account-shell"><aside class="account-sidebar"><div class="account-user"><div class="account-avatar" id="accountAvatar">P</div><div><strong id="sidebarName">Memuat akun…</strong><small id="sidebarEmail">—</small></div></div><nav class="account-nav" aria-label="Menu akun"><button class="active" data-view="dashboard"><span>⌂</span><span>Dashboard</span></button><button data-view="orders"><span>▤</span><span>Riwayat Transaksi</span></button><button data-view="wallet"><span>▣</span><span>Isi Saldo</span></button><button data-view="mutasi"><span>⇄</span><span>Mutasi Saldo</span></button><button data-view="profile"><span>♙</span><span>Pengaturan Profil</span></button><button data-view="security"><span>⚙</span><span>Keamanan</span></button><button id="accountLogout"><span>↪</span><span>Logout</span></button></nav></aside>
+<main class="account-main"><div class="account-mobile-top"><span class="account-top-link">PIXELVALLN SHOP / AKUN</span><a href="index.html" class="account-top-link">Kembali ke toko ↗</a></div><div class="account-heading"><h1 id="pageTitle">Dashboard</h1><p id="pageSubtitle">Ringkasan akun dan aktivitas belanjamu.</p></div>
+<section class="account-section" data-section="dashboard"><div class="account-grid"><div class="account-stat"><small>Saldo tersedia</small><strong id="dashBalance">Rp0</strong></div><div class="account-stat"><small>Total transaksi</small><strong id="dashOrderCount">0</strong></div><div class="account-stat"><small>Pesanan aktif</small><strong id="dashActiveCount">0</strong></div></div><div class="account-panel"><h2>Pesanan Terbaru</h2><p>Pantau status pembayaran dan proses pesananmu.</p><div id="recentOrders" class="empty-state">Memuat transaksi…</div><div class="account-actions"><button class="account-btn" data-goto="orders">Lihat Semua Transaksi</button><button class="account-btn secondary" data-goto="wallet">Isi Saldo</button></div></div></section>
+<section class="account-section" data-section="orders" hidden><div class="account-panel"><h2>Riwayat Transaksi</h2><p>Pesanan yang dibuat saat login akan tampil di sini. Status diperbarui dari database.</p><div class="account-toolbar"><input class="account-search" id="orderSearch" placeholder="Cari kode invoice atau produk…"><div class="filter-row"><button class="filter-btn active" data-order-filter="all">Semua</button><button class="filter-btn" data-order-filter="pending">Pending</button><button class="filter-btn" data-order-filter="verified">Bayar Terverifikasi</button><button class="filter-btn" data-order-filter="processing">Diproses</button><button class="filter-btn" data-order-filter="completed">Selesai</button><button class="filter-btn" data-order-filter="failed">Gagal</button></div><select id="orderSort" class="account-search" aria-label="Urutkan transaksi"><option value="new">Terbaru</option><option value="old">Terlama</option></select></div><div id="allOrders" class="empty-state">Memuat transaksi…</div></div></section>
+<section class="account-section" data-section="wallet" hidden><div class="wallet-balance"><div><small>Saldo PixelValln</small><strong id="walletBalance">Rp0</strong><small>Saldo hanya bertambah setelah admin memverifikasi pembayaran.</small></div><div class="account-avatar">₱</div></div><div class="account-panel"><h2>Isi Saldo</h2><p>Pilih nominal saldo dan metode pembayaran yang tersedia.</p><form id="walletForm" class="wallet-form"><label>NOMINAL SALDO<select id="walletAmount" required><option value="10000">Rp10.000</option><option value="20000">Rp20.000</option><option value="50000">Rp50.000</option><option value="100000">Rp100.000</option><option value="200000">Rp200.000</option><option value="500000">Rp500.000</option></select></label><label>METODE PEMBAYARAN<select id="walletMethod" required><option value="QRIS">QRIS</option><option value="DANA">DANA</option><option value="GoPay">GoPay</option><option value="OVO">OVO</option><option value="ShopeePay">ShopeePay</option><option value="Transfer Bank">Transfer Bank</option></select></label><div style="grid-column:1/-1"><button class="account-btn" id="walletSubmit" type="submit">Buat Permintaan Isi Saldo</button><p id="walletMessage" class="account-message" role="status"></p><div id="walletPaymentInstruction" class="wallet-notice" hidden></div></div></form><div class="wallet-notice"><b>Perlu diketahui:</b> QRIS website saat ini masih statis. Permintaan isi saldo berstatus menunggu sampai admin memeriksa pembayaran dan menyetujui saldo. Jangan anggap saldo bertambah hanya karena tombol konfirmasi ditekan.</div></div><div class="account-panel"><h2>Permintaan Isi Saldo</h2><p>Daftar transaksi top-up saldo kamu.</p><div id="walletTopups" class="empty-state">Memuat…</div></div></section>
+<section class="account-section" data-section="mutasi" hidden><div class="account-panel"><h2>Mutasi Saldo</h2><p>Riwayat saldo masuk dan keluar dari dompet akun.</p><div id="walletLedger" class="empty-state">Memuat mutasi…</div></div></section>
+<section class="account-section" data-section="profile" hidden><div class="account-panel"><h2>Foto Profil</h2><p>Unggah gambar sendiri untuk foto akun. Format JPG, PNG, atau WebP, maksimal 3 MB.</p><div class="profile-photo-row"><div class="account-avatar profile-avatar-preview" id="profileAvatarPreview">P</div><div class="profile-photo-controls"><input id="profileAvatarFile" type="file" accept="image/png,image/jpeg,image/webp"><button class="account-btn secondary" id="uploadAvatarBtn" type="button">Unggah Foto</button><button class="account-btn secondary" id="removeAvatarBtn" type="button">Hapus Foto</button><p id="avatarMessage" class="account-message" role="status"></p></div></div></div><div class="account-panel"><h2>Informasi Profil</h2><p>Perbarui informasi yang digunakan untuk transaksi.</p><form id="profileForm"><div class="account-fields"><label>USERNAME<input id="profileUsername" maxlength="30" required autocomplete="username"><span class="account-help">3–30 karakter; huruf, angka, titik, garis bawah.</span></label><label>NAMA LENGKAP<input id="profileFullName" maxlength="80" required autocomplete="name"></label><label>EMAIL<input id="profileEmail" disabled></label><label>NOMOR WHATSAPP<input id="profileWhatsapp" maxlength="20" placeholder="Contoh: 08xxxxxxxxxx" inputmode="tel" autocomplete="tel"></label></div><div class="account-actions"><button class="account-btn" type="submit">Simpan Perubahan</button></div><p id="profileMessage" class="account-message" role="status"></p></form></div></section>
+<section class="account-section" data-section="security" hidden><div class="account-panel"><h2>Keamanan Akun</h2><p>Ganti password akun menggunakan email yang sudah terverifikasi.</p><form id="passwordForm" class="wallet-form"><label>PASSWORD BARU<input id="newPassword" type="password" minlength="8" autocomplete="new-password" required placeholder="Minimal 8 karakter"></label><label>ULANGI PASSWORD<input id="confirmPassword" type="password" minlength="8" autocomplete="new-password" required placeholder="Ulangi password baru"></label><div style="grid-column:1/-1"><button class="account-btn" type="submit">Ubah Password</button><p id="securityMessage" class="account-message" role="status"></p></div></form></div></section>
+</main></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-client.js"></script><script src="akun.js"></script><script>
+/* PixelValln SHOP: branded intro on every full page load */
+(function(){
+  if (document.querySelector('.pv-intro-splash')) return;
+  var splash=document.createElement('div');
+  splash.className='pv-intro-splash';
+  splash.setAttribute('role','status');
+  splash.setAttribute('aria-label','Memuat PixelValln SHOP');
+  splash.innerHTML='<div class="pv-intro-inner"><div class="pv-intro-logo-wrap"><img class="pv-intro-logo" src="./lg.png" alt="PixelValln SHOP"></div><div class="pv-intro-title">PixelValln <span>SHOP</span></div><div class="pv-intro-tagline">Digital Goods · Instant Experience</div><div class="pv-intro-progress" aria-hidden="true"><span></span></div></div>';
+  document.body.appendChild(splash);
+  var start=Date.now();
+  function hide(){
+    var delay=Math.max(0,1050-(Date.now()-start));
+    window.setTimeout(function(){splash.classList.add('is-hidden');window.setTimeout(function(){splash.remove();},480);},delay);
+  }
+  if(document.readyState==='complete') hide();
+  else window.addEventListener('load',hide,{once:true});
+  window.setTimeout(hide,2600);
+})();
+</script>
+</body></html>

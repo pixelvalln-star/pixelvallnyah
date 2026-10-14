@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <title>Admin — PixelValln SHOP</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080b18;--panel:#11182b;--line:#27324b;--text:#edf3ff;--muted:#a4b0c8;--blue:#168cff;--green:#27c58b;--red:#ff647c}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#172747 0,var(--bg) 48%);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+    .wrap{width:min(1120px,calc(100% - 28px));margin:36px auto}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+    h1{font-size:clamp(25px,4vw,36px);margin:0}h2{margin:0 0 14px;font-size:21px}.muted{color:var(--muted)}.panel{background:rgba(17,24,43,.94);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:18px;box-shadow:0 16px 40px #0002}
+    .field{display:grid;gap:7px;margin:12px 0}.field label{font-size:12px;letter-spacing:.08em;color:var(--muted);font-weight:700}.field input,.delivery-editor textarea{width:100%;padding:12px 13px;border-radius:10px;border:1px solid var(--line);background:#080e1d;color:var(--text);font:inherit}.delivery-editor{min-width:250px;flex-basis:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:#0b1222;margin-top:8px}.delivery-editor label{display:block;font-size:12px;color:var(--muted);font-weight:700;margin-bottom:7px}.delivery-editor textarea{min-height:120px;resize:vertical}.delivery-editor .fine{max-width:420px}
+    button,.btn{border:0;border-radius:10px;padding:10px 13px;font:600 14px system-ui;cursor:pointer;background:var(--blue);color:white;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px}
+    button.secondary{background:#25324c}button.green{background:#087b5b}button.red{background:#8b2941}button:disabled{opacity:.45;cursor:not-allowed}
+    .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.hidden{display:none!important}.notice{padding:11px 13px;border-radius:10px;background:#18233a;color:var(--muted);margin:12px 0}.notice.error{background:#3a1724;color:#ffdbe2}.notice.ok{background:#12382f;color:#c5ffeb}
+    .table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:900px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}td small{display:block;color:var(--muted);margin-top:4px}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#29364e;font-size:12px}.pill.good{background:#124c3c;color:#b8ffe4}.pill.warn{background:#5b4520;color:#ffebb6}
+    .actions{display:flex;flex-wrap:wrap;gap:6px;min-width:180px}.token{margin-top:8px;overflow-wrap:anywhere;color:#b8ffe4;font-size:12px}.empty{text-align:center;padding:24px;color:var(--muted)}.fine{font-size:12px;color:var(--muted)}.review-admin-card{border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0;background:#0b1222}.review-stars{color:#ffd166;letter-spacing:2px}.review-meta{font-size:12px;color:var(--muted);margin-top:8px}
+    @media(max-width:600px){.wrap{margin:20px auto}.panel{padding:16px}.top{align-items:flex-start;flex-direction:column}}
+  </style>
+<!-- PixelValln SHOP Favicon -->
+<link rel="icon" type="image/jpeg" href="./lg.png">
+<link rel="shortcut icon" type="image/jpeg" href="./lg.png">
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div><p class="muted" style="margin:0 0 5px">PIXELVALLN SHOP</p><h1>Admin Panel</h1><p class="muted" style="margin:6px 0 0">Kelola pesanan dan verifikasi pembayaran.</p></div>
+      <div class="row"><a class="btn" href="index.html">Buka toko ↗</a><button id="logoutBtn" class="secondary hidden" type="button">Logout</button></div>
+    </header>
+
+    <section id="loginPanel" class="panel">
+      <h2>Login admin</h2>
+      <p class="muted">Masuk menggunakan akun Supabase yang sudah terdaftar sebagai admin toko.</p>
+      <form id="loginForm">
+        <div class="field"><label for="email">EMAIL</label><input id="email" type="email" autocomplete="username" required></div>
+        <div class="field"><label for="password">PASSWORD</label><input id="password" type="password" autocomplete="current-password" required></div>
+        <button id="loginBtn" type="submit">Login</button>
+      </form>
+      <div id="loginMessage" class="notice" role="status">Gunakan akun admin yang sudah kamu daftarkan di Supabase.</div>
+    </section>
+
+    <section id="ordersPanel" class="panel hidden">
+      <div class="top" style="margin-bottom:14px"><div><h2>Daftar pesanan</h2><p id="adminIdentity" class="muted" style="margin:4px 0 0"></p></div><button id="refreshBtn" class="secondary" type="button">Muat ulang</button></div>
+      <div class="notice">Verifikasi pembayaran, proses pesanan, lalu tandai selesai. Untuk produk digital seperti akun Minecraft atau kode redeem Valorant, gunakan <b>Isi detail kiriman</b>. Detail hanya ditampilkan kepada pelanggan setelah pembayaran terverifikasi dan pesanan selesai. Jangan masukkan password email utama atau OTP.</div>
+      <div id="ordersMessage" class="notice" role="status">Memuat pesanan…</div>
+      <div class="table-wrap"><table><thead><tr><th>Pesanan</th><th>Pelanggan</th><th>Produk</th><th>Total</th><th>Status</th><th>Aksi</th></tr></thead><tbody id="ordersBody"></tbody></table></div>
+    </section>
+
+
+    <section id="stockPanel" class="panel hidden">
+      <div class="top" style="margin-bottom:14px"><div><h2>Kelola Stok Produk</h2><p class="muted" style="margin:4px 0 0">Matikan stok per varian agar pelanggan tidak bisa checkout produk yang habis.</p></div><button id="refreshStockBtn" class="secondary" type="button">Muat ulang stok</button></div>
+      <div class="field"><label for="stockSearch">CARI PRODUK</label><input id="stockSearch" type="search" placeholder="Cari game, aplikasi, kategori, atau varian..."></div>
+      <div id="stockMessage" class="notice" role="status">Memuat stok produk...</div>
+      <div class="table-wrap"><table style="min-width:760px"><thead><tr><th>Produk</th><th>Kategori</th><th>Varian</th><th>Harga</th><th>Status stok</th><th>Aksi</th></tr></thead><tbody id="stockBody"></tbody></table></div>
+    </section>
+
+    <section id="walletPanel" class="panel hidden">
+      <div class="top" style="margin-bottom:14px"><div><h2>Permintaan Isi Saldo</h2><p class="muted" style="margin:4px 0 0">Periksa transaksi pembayaran sebelum menyetujui saldo pelanggan.</p></div><button id="refreshWalletBtn" class="secondary" type="button">Muat ulang</button></div>
+      <div class="notice">Jangan menyetujui hanya berdasarkan screenshot. Cocokkan nominal dan transaksi di aplikasi merchant/rekening terlebih dahulu. Saldo hanya ditambahkan setelah status disetujui.</div>
+      <div id="walletAdminMessage" class="notice" role="status">Memuat permintaan isi saldo…</div>
+      <div class="table-wrap"><table style="min-width:800px"><thead><tr><th>Kode</th><th>Pelanggan</th><th>Nominal</th><th>Metode</th><th>Status</th><th>Aksi</th></tr></thead><tbody id="walletAdminBody"></tbody></table></div>
+    </section>
+
+    <section id="reviewsPanel" class="panel hidden">
+      <div class="top" style="margin-bottom:14px"><div><h2>Moderasi ulasan</h2><p class="muted" style="margin:4px 0 0">Setujui ulasan pelanggan sebelum ditampilkan di toko.</p></div><button id="refreshReviewsBtn" class="secondary" type="button">Muat ulang ulasan</button></div>
+      <div id="reviewsMessage" class="notice" role="status">Memuat ulasan…</div>
+      <div id="adminReviewsList"></div>
+    </section>
+
+    <p class="fine">Jangan bagikan password, OTP, atau Supabase service_role key. Panel ini memakai publishable key dan aturan RLS database.</p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="product-catalog.js"></script>
+  <script src="admin.js"></script>
+<script>
+/* PixelValln SHOP: branded intro on every full page load */
+(function(){
+  if (document.querySelector('.pv-intro-splash')) return;
+  var splash=document.createElement('div');
+  splash.className='pv-intro-splash';
+  splash.setAttribute('role','status');
+  splash.setAttribute('aria-label','Memuat PixelValln SHOP');
+  splash.innerHTML='<div class="pv-intro-inner"><div class="pv-intro-logo-wrap"><img class="pv-intro-logo" src="./lg.png" alt="PixelValln SHOP"></div><div class="pv-intro-title">PixelValln <span>SHOP</span></div><div class="pv-intro-tagline">Digital Goods · Instant Experience</div><div class="pv-intro-progress" aria-hidden="true"><span></span></div></div>';
+  document.body.appendChild(splash);
+  var start=Date.now();
+  function hide(){
+    var delay=Math.max(0,1050-(Date.now()-start));
+    window.setTimeout(function(){splash.classList.add('is-hidden');window.setTimeout(function(){splash.remove();},480);},delay);
+  }
+  if(document.readyState==='complete') hide();
+  else window.addEventListener('load',hide,{once:true});
+  window.setTimeout(hide,2600);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b18">
+<title>PixelValln SHOP — Top Up Game & Apps Premium</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mobile-responsive-fix.css">
+
+<!-- PixelValln SHOP Favicon -->
+<link rel="icon" type="image/jpeg" href="./lg.png">
+<link rel="shortcut icon" type="image/jpeg" href="./lg.png">
+<meta name="google-site-verification" content="4GT0QQdHV2SUbaZqQgwF3KvFySGs86p_1gSbVeQiA_8" />
+</head>
+<body>
+<div class="waifu-layer waifu-left" aria-hidden="true"><img src="citlali-bg.jpg" alt=""></div>
+<div class="waifu-layer waifu-right" aria-hidden="true"><img src="citlali-bg.jpg" alt=""></div>
+<div class="waifu-layer waifu-bottom" aria-hidden="true"><img src="citlali-bg.jpg" alt=""></div>
+<header><div class="wrap nav">
+<a href="#home" class="brand"><img src="logo.jpg" alt="PixelValln SHOP logo"><span class="brand-name">PixelValln <em>SHOP</em></span></a>
+<nav class="links"><a href="#games">Pilih Game</a><a href="#topup">Daftar Harga</a><a href="#cara">Cara Order</a></nav>
+<div class="nav-actions"><button class="auth-nav-btn" id="openAuthBtn" type="button">Login / Daftar</button><a class="nav-cta" href="#games">TOP UP SEKARANG ↗</a><button class="auth-user-btn" id="logoutBtn" type="button" hidden>Logout</button></div>
+</div></header>
+<main id="home">
+<section class="hero-rework" id="home-hero">
+  <div class="hero-backdrop-grid"></div><div class="pixel-particles" aria-hidden="true"></div><div class="hero-inner wrap">
+    <div class="hero-copy-new"><div class="hero-eyebrow"><span></span> DIGITAL GOODS • INSTANT EXPERIENCE</div>
+      <h1>YOUR GAME.<br><em>YOUR RULES.</em></h1>
+      <p>Tempat top-up game dan produk digital pilihan. Temukan item favoritmu, checkout dengan praktis, dan pantau pesanan dalam satu tempat.</p>
+      <div class="hero-buttons"><a href="#games" class="hero-button-primary">JELAJAHI TOKO <span>↗</span></a><a href="#cara" class="hero-button-secondary">CARA ORDER <span>→</span></a></div>
+      <div class="hero-trustline"><span><i>✦</i> Pilihan produk beragam</span><span><i>◈</i> Status pesanan dapat dipantau</span></div>
+    </div>
+    <div class="hero-art-new"><div class="hero-art-ring ring-a"></div><div class="hero-art-ring ring-b"></div><div class="hero-art-panel"><div class="hero-art-label">FEATURED DROP <span>● LIVE</span></div><img src="featured-explore.jpg" alt="Explore PixelValln SHOP featured banner"><div class="hero-art-footer"><span>PIXELVALLN SELECT</span><b>PLAY YOUR WAY.</b></div></div><div class="hero-float-tag tag-top"><span>✦</span><div><b>GAME READY</b><small>Find your next item</small></div></div><div class="hero-float-tag tag-bottom"><span>↗</span><div><b>ONE STORE</b><small>Games & digital goods</small></div></div><div class="hero-spark spark-a">✦</div><div class="hero-spark spark-b">✧</div></div>
+  </div>
+</section>
+<section class="campaign-band" aria-label="Promosi PixelValln SHOP">
+  <div class="campaign-shell">
+    <div class="campaign-topline"><span class="campaign-pulse"></span> PIXELVALLN SELECTED CAMPAIGNS <span class="campaign-counter" id="campaignCounter">01 / 03</span></div>
+    <div class="campaign-slides" id="campaignSlides">
+      <article class="campaign-slide is-active" data-campaign="0"><div class="campaign-copy"><span class="campaign-tag">GAME ON • DEAL ON</span><h2>LEVEL UP<br><em>YOUR GAME.</em></h2><p>Top-up favoritmu, pilih produk, dan lanjutkan petualanganmu.</p><a href="#games" class="campaign-cta">JELAJAHI PRODUK <span>↗</span></a></div><div class="campaign-visual campaign-visual-one"><img src="campaign-banner-1.jpg" alt="Game-Ready Essentials — banner promosi PixelValln SHOP" loading="lazy"><span class="campaign-orbit orbit-one"></span><span class="campaign-orbit orbit-two"></span><b>PLAY<br>MORE.</b></div></article>
+      <article class="campaign-slide" data-campaign="1"><div class="campaign-copy"><span class="campaign-tag">TOP-UP FAVORIT</span><h2>YOUR NEXT<br><em>VICTORY.</em></h2><p>Temukan nominal dan item yang cocok untuk game kesukaanmu.</p><a href="#games" class="campaign-cta">PILIH GAME <span>↗</span></a></div><div class="campaign-visual campaign-visual-two"><img src="campaign-banner-2.jpg" alt="Cosmic Bonanza — banner promosi PixelValln SHOP" loading="lazy"><span class="campaign-orbit orbit-one"></span><span class="campaign-orbit orbit-two"></span><b>READY<br>TO WIN.</b></div></article>
+      <article class="campaign-slide" data-campaign="2"><div class="campaign-copy"><span class="campaign-tag">MORE THAN GAMES</span><h2>YOUR DIGITAL<br><em>PLAYGROUND.</em></h2><p>Game, voucher, dan aplikasi premium dalam satu tempat.</p><a href="#games" class="campaign-cta">LIHAT SEMUA <span>↗</span></a></div><div class="campaign-visual campaign-visual-three"><img src="campaign-banner-3.jpg" alt="Your Digital Playground — banner promosi PixelValln SHOP" loading="lazy"><span class="campaign-orbit orbit-one"></span><span class="campaign-orbit orbit-two"></span><b>ALL<br>IN ONE.</b></div></article>
+    </div>
+    <div class="campaign-controls"><div class="campaign-dots"><button class="campaign-dot active" data-slide="0" aria-label="Banner 1"></button><button class="campaign-dot" data-slide="1" aria-label="Banner 2"></button><button class="campaign-dot" data-slide="2" aria-label="Banner 3"></button></div><div class="campaign-arrows"><button type="button" id="campaignPrev" aria-label="Banner sebelumnya">←</button><button type="button" id="campaignNext" aria-label="Banner selanjutnya">→</button></div></div>
+  </div>
+</section>
+<section class="wrap metrics"><div class="metric"><strong>Banyak Produk</strong><span>Top up game & aplikasi premium</span></div><div class="metric"><strong>Harga transparan</strong><span>Item dan total terlihat sebelum order</span></div><div class="metric"><strong>Human support</strong><span>Konfirmasi langsung dengan admin</span></div></section>
+<section class="wrap content" id="games"><div class="section-head"><div><div class="kicker">01 / PILIH GAME</div><h2>What are we playing?</h2></div><p>Pilih game untuk melihat semua item dan harga.</p></div><div class="store-tabs" role="tablist" aria-label="Kategori toko"><button type="button" class="store-tab active" data-store-tab="topup">🎮 Top Up Game</button><button type="button" class="store-tab" data-store-tab="premium">✨ Apps Premium</button><button type="button" class="store-tab" data-store-tab="all">Semua Produk</button></div><div class="product-search"><span class="search-icon" aria-hidden="true">⌕</span><input id="productSearch" type="search" placeholder="Cari game atau produk…" autocomplete="off" aria-label="Cari game atau produk"><button type="button" id="clearSearch" aria-label="Hapus pencarian" hidden>✕</button></div><p class="search-hint" id="searchHint">Cari nama game, diamond, VP, Robux, Welkin, dan item lainnya.</p><div class="games" id="gameGrid"></div></section>
+<section class="wrap content" id="topup"><div class="section-head"><div><div class="kicker">02 / PILIH ITEM</div><h2>Pilih item favoritmu.</h2></div><p>Harga mengikuti daftar yang kamu berikan.</p></div>
+<div class="selected-game-art" id="selectedGameArt" aria-live="polite"><div><small>PILIH GAME DI ATAS</small><strong>Game artwork akan muncul di sini</strong></div></div><div class="shop is-locked" id="shopStage"><div class="panel"><h3 id="itemHeading">Pilih game terlebih dahulu</h3><p class="muted" id="itemSub">Daftar item akan muncul di sini. Pilih satu item untuk checkout.</p>
+<label class="fieldlabel">KATEGORI ITEM</label><div id="categoryBar" class="items" style="margin-bottom:18px"></div>
+<label class="fieldlabel">PILIH ITEM / NOMINAL</label><div class="items" id="itemGrid"><div class="empty">Pilih game di atas untuk menampilkan item.</div></div>
+<div id="gameFields" class="game-fields" aria-live="polite">
+  <label class="fieldlabel" for="playerId">USER ID / USERNAME / UID</label>
+  <input class="input" id="playerId" placeholder="Pilih game terlebih dahulu" autocomplete="off">
+  <div id="serverField" class="server-field" hidden>
+    <label class="fieldlabel" for="serverId" id="serverLabel">SERVER / ZONE ID</label>
+    <input class="input" id="serverId" placeholder="Masukkan server atau zone ID" autocomplete="off">
+  </div>
+  <div id="customerNoteWrap" hidden><label class="fieldlabel" for="customerNote">CATATAN PESANAN (OPSIONAL)</label><textarea class="input customer-note" id="customerNote" rows="3" maxlength="100" placeholder="Tulis catatan yang diperlukan untuk pengiriman produk..."></textarea></div><p class="tiny" id="gameFieldHint">Kolom akan menyesuaikan dengan game yang dipilih.</p>
+</div>
+
+<label class="fieldlabel">METODE PEMBAYARAN</label>
+<div class="payment-options" id="paymentOptions">
+  <label class="payment-option selected"><input type="radio" name="paymentMethod" value="QRIS" checked><img class="payment-logo" src="payment-qris.svg" alt="Logo QRIS"><span><strong>QRIS</strong></span></label>
+  <label class="payment-option" id="walletPaymentOption" hidden><input type="radio" name="paymentMethod" value="Saldo PixelValln"><img class="payment-logo wallet-payment-logo" src="lg.png" alt="Logo PixelValln SHOP"><span><strong>Saldo PixelValln</strong><small id="walletPaymentBalance">Memuat saldo…</small></span></label>
+  <label class="payment-option"><input type="radio" name="paymentMethod" value="DANA"><img class="payment-logo" src="payment-dana.svg" alt="Logo DANA"><span><strong>DANA</strong></span></label>
+  <label class="payment-option"><input type="radio" name="paymentMethod" value="GoPay"><img class="payment-logo" src="payment-gopay.svg" alt="Logo GoPay"><span><strong>GoPay</strong></span></label>
+  <label class="payment-option"><input type="radio" name="paymentMethod" value="ShopeePay"><img class="payment-logo" src="payment-shopeepay.svg" alt="Logo ShopeePay"><span><strong>ShopeePay</strong></span></label>
+  <label class="payment-option"><input type="radio" name="paymentMethod" value="OVO"><img class="payment-logo" src="payment-ovo.svg" alt="Logo OVO"><span><strong>OVO</strong></span></label>
+  <label class="payment-option"><input type="radio" name="paymentMethod" value="Transfer Bank"><img class="payment-logo" src="payment-bank.svg" alt="Ilustrasi transfer bank"><span><strong>Transfer Bank</strong></span></label>
+  <label class="payment-option"><input type="radio" name="paymentMethod" value="Lainnya"><img class="payment-logo" src="payment-other.svg" alt="Metode pembayaran lainnya"><span><strong>Lainnya</strong></span></label>
+</div>
+<p class="tiny">Pilih Saldo PixelValln untuk membayar langsung menggunakan saldo akun (khusus pelanggan login dan saldo mencukupi). Pilih QRIS untuk menampilkan QRIS GoPay dan nominal pesanan. Pembayaran QRIS statis perlu memasukkan nominal secara manual dan akan diverifikasi admin. Setelah klik “Saya Sudah Bayar”, status pesanan akan tampil di halaman ini dan diperbarui otomatis.</p>
+
+<label class="fieldlabel" for="waNumber">NOMOR WHATSAPP KAMU</label><input class="input" id="waNumber" type="tel" inputmode="tel" placeholder="Contoh: 08xxxxxxxxxx" autocomplete="tel"><p class="tiny">Nomor ini digunakan admin untuk konfirmasi pesanan. Pastikan nomor aktif dan benar. Jangan pernah berikan password atau kode OTP di formulir ini.</p>
+</div><aside class="panel summary"><div class="sumhead"><div class="sumicon" id="summaryIcon">🎮</div><div><small>ORDER SUMMARY</small><strong id="summaryGame">Belum pilih game</strong></div></div><div class="sumrow"><span>Kategori</span><b id="summaryCategory">—</b></div><div class="sumrow"><span>Item</span><b id="summaryItem">—</b></div><div class="sumrow"><span>ID / Catatan</span><b id="summaryUid">Belum diisi</b></div><div class="sumrow"><span>WhatsApp</span><b id="summaryWa">Belum diisi</b></div><div class="sumrow"><span>Pembayaran</span><b id="summaryPayment">QRIS</b></div><div class="total"><span>Subtotal</span><strong id="summaryPrice">Rp0</strong></div>
+<div class="pv-promo-box"><label class="fieldlabel" for="promoCodeInput">KODE PROMO</label><div class="pv-promo-row"><input class="input" id="promoCodeInput" maxlength="40" placeholder="Contoh: VALLN10" autocomplete="off"><button class="btn btn-ghost" id="applyPromoBtn" type="button">Pakai</button></div><p id="promoMessage" class="tiny" role="status">Login diperlukan untuk menggunakan kode promo.</p><div class="pv-discount-row" id="promoDiscountRow" hidden><span>Diskon</span><strong id="promoDiscountValue">-Rp0</strong></div><div class="pv-final-total"><span>Total bayar</span><strong id="summaryFinalPrice">Rp0</strong></div></div>
+<button class="btn btn-main" id="checkoutBtn">Lanjutkan Pembayaran ↗</button><p class="tiny">Untuk QRIS, popup pembayaran akan menampilkan QR dan nominal pesanan. Pembayaran tetap menunggu verifikasi admin. Pesanan dan statusnya tetap tercatat di website.</p></aside></div>
+</section>
+<section class="wrap content" id="cara"><div class="section-head"><div><div class="kicker">03 / EASY ORDER</div><h2>Order dalam 3 langkah.</h2></div></div><div class="steps"><div class="step"><span>STEP 01</span><h4>Pilih game & item</h4><p>Pilih game, kategori produk, lalu nominal atau item yang kamu inginkan.</p></div><div class="step"><span>STEP 02</span><h4>Isi detail order</h4><p>Masukkan ID atau username yang diperlukan dan nomor WhatsApp aktif.</p></div><div class="step"><span>STEP 03</span><h4>Pantau status pesanan</h4><p>Setelah mengonfirmasi pembayaran, status pesanan tampil otomatis di website hingga selesai.</p></div></div></section>
+</main>
+<div class="payment-modal" id="qrisPaymentModal" hidden>
+  <div class="payment-backdrop" data-close-payment></div>
+  <section class="payment-card" role="dialog" aria-modal="true" aria-labelledby="qrisPaymentTitle">
+    <button class="payment-close" type="button" id="closeQrisPayment" aria-label="Tutup">×</button>
+    <div class="kicker">PIXELVALLN SHOP · PEMBAYARAN</div>
+    <h2 id="qrisPaymentTitle">Scan QRIS</h2>
+    <p class="payment-intro">Bayar sesuai nominal yang tertera di bawah. QRIS ini statis, jadi nominal harus kamu masukkan sendiri di aplikasi pembayaran.</p>
+    <div class="qris-image-wrap"><img id="qrisPaymentImage" src="qris-gopay.jpg" alt="QRIS GoPay Merchant PixelValln SHOP"><button type="button" id="zoomQrisBtn" class="qris-zoom">Perbesar QRIS</button></div>
+    <div class="payment-total-label">TOTAL YANG HARUS DIBAYAR</div>
+    <div class="payment-total" id="qrisPaymentAmount">Rp0</div>
+    <button class="btn btn-ghost copy-amount-btn" type="button" id="copyQrisAmount">Salin Nominal</button>
+    <ol class="payment-instructions"><li>Buka aplikasi pembayaran yang mendukung QRIS.</li><li>Scan QRIS di atas.</li><li>Masukkan nominal yang persis sama dengan total pesanan.</li><li>Selesaikan pembayaran, lalu tekan tombol konfirmasi di bawah.</li></ol>
+    <p class="payment-pending-note"><span>●</span> Setelah konfirmasi, status tetap <b>Menunggu Verifikasi Admin</b> sampai pembayaran dicek.</p>
+    <button class="btn btn-main payment-confirm-btn" type="button" id="qrisPaidBtn">Saya Sudah Bayar ↗</button>
+  </section>
+</div>
+<div class="payment-modal" id="pvOrderStatusOverlay" hidden>
+  <div class="payment-backdrop"></div>
+  <section class="payment-card pv-status-clean" role="dialog" aria-modal="true" aria-labelledby="pvOrderStatusTitle">
+    <button class="payment-close" type="button" id="pvOrderStatusClose" aria-label="Tutup">×</button>
+    <div class="kicker">PIXELVALLN SHOP · STATUS PESANAN</div>
+    <h2 id="pvOrderStatusTitle">Pesanan kamu tercatat</h2>
+    <div class="pv-status-code-row"><div><small>KODE PESANAN</small><strong id="pvOrderCode">—</strong></div><span id="pvOrderBadge" class="pv-status-badge">Menunggu</span></div>
+    <div class="pv-status-order-grid"><div><small>Game</small><strong id="pvOrderGame">—</strong></div><div><small>Produk</small><strong id="pvOrderProduct">—</strong></div><div><small>Total pembayaran</small><strong id="pvOrderAmount">—</strong></div><div><small>Metode pembayaran</small><strong id="pvOrderMethod">—</strong></div></div>
+    <p id="pvOrderPaymentText" class="payment-pending-note">Menunggu verifikasi pembayaran</p>
+    <div id="pvOrderProgress" class="pv-order-progress"><span class="active">● Pesanan dibuat</span><span>○ Sedang diproses</span><span>○ Pesanan selesai</span></div>
+    <p id="pvOrderStatusText" class="payment-intro" aria-live="polite">Menunggu verifikasi pembayaran oleh admin.</p>
+    <section id="pvDeliveredDetailsWrap" hidden class="pv-delivered-details"><h3>Detail Pesanan Kamu</h3><p>Berikut detail produk digital yang dikirim admin:</p><pre id="pvDeliveredDetails"></pre></section><p id="pvOrderReviewNote" hidden>Pesanan selesai! Kamu bisa mengirim ulasan melalui popup yang muncul otomatis.</p>
+    <button class="btn btn-main" type="button" onclick="document.getElementById('pvOrderStatusOverlay').hidden=true">Tutup</button>
+  </section>
+</div>
+<style>
+.pv-status-clean{background:#f8fafc!important;color:#172033!important;border:1px solid #dce3ed!important;border-radius:18px!important;box-shadow:0 24px 70px #0003!important}.pv-status-clean .kicker{color:#64748b}.pv-status-clean h2{color:#111827}.pv-status-clean .payment-intro{color:#475569}.pv-status-clean .payment-pending-note{color:#475569;background:#eef4fb;border-radius:10px;padding:11px}.pv-status-code-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #e2e8f0}.pv-status-code-row>div{display:grid;gap:5px}.pv-status-code-row small,.pv-status-order-grid small{font-size:10px;color:#64748b;letter-spacing:.06em;font-weight:800}.pv-status-code-row strong{font-size:18px;color:#1d4ed8;overflow-wrap:anywhere}.pv-status-badge{background:#fff0cc;color:#8a5a00;border-radius:999px;padding:7px 10px;font-size:11px;font-weight:800}.pv-status-order-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px 0}.pv-status-order-grid>div{display:grid;gap:5px;min-width:0}.pv-status-order-grid strong{font-size:13px;color:#111827;overflow-wrap:anywhere}.pv-status-clean .pv-order-progress{background:#eef4fb;color:#64748b}.pv-status-clean .pv-order-progress .active{color:#1d4ed8}.pv-status-clean .pv-delivered-details{background:#eff6ff;border-color:#bfdbfe}.pv-status-clean .pv-delivered-details h3,.pv-status-clean .pv-delivered-details pre{color:#172033}.pv-status-clean .btn-main{color:#0f172a!important}@media(max-width:500px){.pv-status-order-grid{grid-template-columns:1fr}}.pv-order-progress{display:grid;gap:9px;padding:14px;margin:14px 0;border-radius:12px;background:rgba(137,207,240,.07);color:#bfc9df}.pv-order-progress .active{color:#89cff0;font-weight:800}.pv-delivered-details{margin:16px 0;padding:15px;border:1px solid rgba(137,207,240,.3);border-radius:14px;background:rgba(137,207,240,.07)}.pv-delivered-details h3{margin:0 0 8px}.pv-delivered-details p{font-size:13px;color:#bfc9df}.pv-delivered-details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;color:#fff;margin:10px 0 0}
+.pv-promo-box{margin-top:18px;padding-top:15px;border-top:1px solid var(--line)}.pv-promo-row{display:flex;gap:8px}.pv-promo-row .input{min-width:0}.pv-promo-row .btn{white-space:nowrap;padding:10px 12px}.pv-discount-row{display:flex;justify-content:space-between;gap:10px;color:#7cf5c2;font-size:12px;margin-top:12px}.pv-final-total{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px}.pv-final-total span{color:var(--muted);font-size:12px}.pv-final-total strong{font-size:20px;color:#a8efff}
+</style>
+<div class="qris-lightbox" id="qrisLightbox" hidden><button type="button" id="closeQrisLightbox" aria-label="Tutup QRIS">×</button><img src="qris-gopay.jpg" alt="QRIS GoPay diperbesar"></div>
+<div class="auth-modal" id="authModal" hidden><div class="auth-backdrop" data-close-auth></div><section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle"><button class="auth-close" type="button" id="closeAuthBtn" aria-label="Tutup">×</button><div class="auth-brand-mark">✦</div><div class="kicker">PIXELVALLN ACCOUNT</div><h2 id="authTitle">Selamat datang!</h2><p class="auth-subtitle" id="authSubtitle">Login untuk melanjutkan petualanganmu.</p><form id="authForm"><label class="fieldlabel" for="authEmail">EMAIL</label><input class="input" id="authEmail" type="email" autocomplete="email" placeholder="nama@email.com" required><div id="authPasswordWrap"><label class="fieldlabel" for="authPassword">PASSWORD</label><input class="input" id="authPassword" type="password" autocomplete="current-password" minlength="8" placeholder="Minimal 8 karakter"></div><div id="authOtpWrap" hidden><label class="fieldlabel" for="authOtp">KODE VERIFIKASI EMAIL</label><input class="input" id="authOtp" inputmode="numeric" autocomplete="one-time-code" placeholder="Masukkan kode dari email"></div><button class="btn btn-main auth-submit" id="authSubmitBtn" type="submit">Login</button></form><button class="auth-text-btn" id="forgotPasswordBtn" type="button">Lupa password?</button><p class="auth-switch" id="authSwitchText">Belum punya akun? <button type="button" id="switchAuthBtn">Daftar sekarang</button></p><p class="auth-message" id="authMessage" role="status" aria-live="polite"></p><p class="auth-privacy">Jangan bagikan kode verifikasi kepada siapa pun.</p></section></div><div class="pv-page-transition" id="pvPageTransition" aria-hidden="true"><div class="pv-transition-grid"></div><div class="pv-transition-logo"><div class="pv-transition-logo-wrap"><img class="pv-transition-logo-img" src="./lg.png" alt="PixelValln SHOP"></div><strong>PixelValln <span>SHOP</span></strong><small>Digital Goods · Instant Experience</small><div class="pv-transition-progress"><i></i></div></div></div>
+<footer><div class="wrap foot"><div><b>PixelValln SHOP</b><br>Top up your favorite games.</div><div>© <span id="year"></span> PixelValln SHOP · All rights reserved.</div></div></footer><div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // Pastikan koneksi Supabase siap sebelum checkout dijalankan.
+  window.pixelSupabase = window.pixelSupabase || window.supabase.createClient(
+    "https://kanswxpnoyshrunyubmg.supabase.co",
+    "sb_publishable_8wRxslScRKutbK2l5nPM0A_51AhnRPM"
+  );
+</script>
+<script src="product-catalog.js"></script>
+<script src="script.js"></script>
+<script src="homepage-reviews.js"></script>
+<script src="auth.js"></script>
+<script src="promo-checkout.js"></script>
+<script src="review-popup.js"></script>
+<script>
+/* Frontend motion: campaign carousel + branded section transition */
+(() => {
+  const slides=[...document.querySelectorAll(".campaign-slide")];
+  const dots=[...document.querySelectorAll(".campaign-dot")];
+  const counter=document.getElementById("campaignCounter");
+  let current=0, timer=null;
+  function showSlide(next){
+    if(!slides.length)return;
+    current=(next+slides.length)%slides.length;
+    slides.forEach((slide,i)=>slide.classList.toggle("is-active",i===current));
+    dots.forEach((dot,i)=>dot.classList.toggle("active",i===current));
+    if(counter)counter.textContent=String(current+1).padStart(2,"0")+" / "+String(slides.length).padStart(2,"0");
+  }
+  function restart(){if(timer)clearInterval(timer);timer=setInterval(()=>showSlide(current+1),6500);}
+  dots.forEach((dot)=>dot.addEventListener("click",()=>{showSlide(Number(dot.dataset.slide)||0);restart()}));
+  document.getElementById("campaignPrev")?.addEventListener("click",()=>{showSlide(current-1);restart()});
+  document.getElementById("campaignNext")?.addEventListener("click",()=>{showSlide(current+1);restart()});
+  if(slides.length>1)restart();
+
+  const transition=document.getElementById("pvPageTransition");
+  let transitionLock=false;
+  document.addEventListener("click",(event)=>{
+    const link=event.target.closest('a[href^="#"]');
+    if(!link||!transition)return;
+    const href=link.getAttribute("href");
+    if(!href||href==="#"||href==="#home"||href==="#home-hero")return;
+    const target=document.querySelector(href);
+    if(!target)return;
+    if(transitionLock)return;
+    transitionLock=true;
+    transition.classList.remove("is-leaving");
+    transition.classList.add("is-active");
+    transition.setAttribute("aria-hidden","false");
+    window.setTimeout(()=>{
+      transition.classList.add("is-leaving");
+      window.setTimeout(()=>{
+        transition.classList.remove("is-active","is-leaving");
+        transition.setAttribute("aria-hidden","true");
+        transitionLock=false;
+      },340);
+    },470);
+  },{passive:true});
+
+  document.querySelectorAll(".game").forEach(card=>{
+    card.addEventListener("pointermove",event=>{
+      const rect=card.getBoundingClientRect();
+      card.style.setProperty("--shine-x",`${event.clientX-rect.left}px`);
+      card.style.setProperty("--shine-y",`${event.clientY-rect.top}px`);
+    });
+  });
+})();
+</script>
+
+<script>
+/* PixelValln SHOP: branded intro on every full page load */
+(function(){
+  if (document.querySelector('.pv-intro-splash')) return;
+  var splash=document.createElement('div');
+  splash.className='pv-intro-splash';
+  splash.setAttribute('role','status');
+  splash.setAttribute('aria-label','Memuat PixelValln SHOP');
+  splash.innerHTML='<div class="pv-intro-inner"><div class="pv-intro-logo-wrap"><img class="pv-intro-logo" src="./lg.png" alt="PixelValln SHOP"></div><div class="pv-intro-title">PixelValln <span>SHOP</span></div><div class="pv-intro-tagline">Digital Goods · Instant Experience</div><div class="pv-intro-progress" aria-hidden="true"><span></span></div></div>';
+  document.body.appendChild(splash);
+  var start=Date.now();
+  function hide(){
+    var delay=Math.max(0,1050-(Date.now()-start));
+    window.setTimeout(function(){splash.classList.add('is-hidden');window.setTimeout(function(){splash.remove();},480);},delay);
+  }
+  if(document.readyState==='complete') hide();
+  else window.addEventListener('load',hide,{once:true});
+  window.setTimeout(hide,2600);
+})();
+</script>
+
+<a class="pv-whatsapp-support" href="https://wa.me/6282297889419" target="_blank" rel="noopener noreferrer" aria-label="Hubungi customer service PixelValln SHOP melalui WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.52 3.48A11.8 11.8 0 0 0 12.1 0C5.57 0 .25 5.31.25 11.85c0 2.09.55 4.13 1.59 5.93L.15 24l6.39-1.67a11.9 11.9 0 0 0 5.56 1.42h.01c6.53 0 11.85-5.32 11.85-11.85 0-3.17-1.23-6.15-3.44-8.42ZM12.1 21.73a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.79.99 1.01-3.69-.23-.38a9.83 9.83 0 0 1-1.51-5.21c0-5.46 4.45-9.9 9.92-9.9a9.84 9.84 0 0 1 7.02 2.91 9.84 9.84 0 0 1 2.9 7.02c0 5.46-4.45 9.9-9.93 9.9Zm5.44-7.42c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+  <span>Tanya Admin</span>
+</a>
+
+
+<script>
+/* Lightweight decorative rising pixel particles */
+(function(){
+  const scene=document.querySelector("#home-hero .pixel-particles");
+  if(!scene || scene.dataset.initialized) return;
+  scene.dataset.initialized="true";
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const count=window.matchMedia("(max-width: 600px)").matches ? 12 : 25;
+  for(let i=0;i<count;i++){
+    const p=document.createElement("span"); p.className="pixel-particle";
+    p.style.left=(Math.random()*100)+"%";
+    p.style.setProperty("--pixel-size",(3+Math.random()*6)+"px");
+    p.style.setProperty("--pixel-duration",(6+Math.random()*7)+"s");
+    p.style.setProperty("--pixel-delay",(-Math.random()*12)+"s");
+    p.style.setProperty("--pixel-drift",(-30+Math.random()*60)+"px");
+    p.style.setProperty("--pixel-opacity",(.28+Math.random()*.48).toFixed(2));
+    scene.appendChild(p);
+  }
+})();
+</script>
+<style id="pv-mobile-final-optimization">
+/* Final mobile layout pass — preserves desktop content and features; changes layout only. */
+html, body { max-width:100%; overflow-x:clip; }
+img, svg, video, canvas { max-width:100%; }
+@media (max-width: 680px) {
+  body:not(.checkout-mode) > header {
+    position:sticky!important; top:0!important; left:auto!important; right:auto!important;
+    width:calc(100% - 14px)!important; max-width:none!important; margin:7px auto 0!important;
+    padding:0!important; z-index:100!important;
+  }
+  body:not(.checkout-mode) > header > .nav {
+    display:flex!important; flex-wrap:wrap!important; align-items:center!important;
+    width:100%!important; height:auto!important; min-height:54px!important;
+    padding:8px 10px!important; gap:7px 10px!important; border-radius:14px!important;
+  }
+  body:not(.checkout-mode) > header .brand { flex:1 1 140px!important; min-width:0!important; }
+  body:not(.checkout-mode) > header .brand img { width:31px!important; height:31px!important; flex:0 0 31px!important; }
+  body:not(.checkout-mode) > header .brand-name { font-size:clamp(11px,3.2vw,13px)!important; white-space:nowrap!important; }
+  body:not(.checkout-mode) > header .nav-actions {
+    display:flex!important; flex:0 1 auto!important; min-width:0!important; flex-wrap:wrap!important;
+    align-items:center!important; justify-content:flex-end!important; gap:5px!important; margin-left:auto!important;
+  }
+  body:not(.checkout-mode) > header .nav-cta,
+  body:not(.checkout-mode) > header .auth-nav-btn,
+  body:not(.checkout-mode) > header .auth-user-btn {
+    display:inline-flex!important; align-items:center!important; justify-content:center!important;
+    max-width:100%!important; white-space:nowrap!important; font-size:clamp(9px,2.5vw,11px)!important;
+    padding:8px 9px!important; line-height:1.15!important;
+  }
+  body:not(.checkout-mode) > header .links {
+    display:flex!important; order:3!important; flex:1 0 100%!important; min-width:0!important;
+    flex-wrap:wrap!important; justify-content:center!important; gap:7px 18px!important;
+    padding:5px 0 2px!important; font-size:11px!important; line-height:1.35!important;
+  }
+  body:not(.checkout-mode) > header .links a { display:inline-flex!important; padding:3px 0!important; }
+  html { scroll-padding-top:120px!important; }
+
+  .hero-rework { min-height:0!important; padding-top:20px!important; background-position:center 48%!important; background-size:cover!important; }
+  .hero-inner { display:grid!important; grid-template-columns:minmax(0,1fr)!important; gap:12px!important; width:calc(100% - 26px)!important; padding:20px 0 30px!important; }
+  .hero-copy-new { min-width:0!important; width:100%!important; }
+  .hero-copy-new h1 { font-size:clamp(36px,10.8vw,52px)!important; line-height:.96!important; overflow-wrap:anywhere!important; }
+  .hero-copy-new p { max-width:100%!important; font-size:13px!important; line-height:1.65!important; }
+  .hero-buttons { display:flex!important; flex-wrap:wrap!important; gap:8px!important; }
+  .hero-button-primary, .hero-button-secondary { min-height:42px!important; padding:11px 13px!important; font-size:10px!important; }
+  .hero-trustline { display:flex!important; flex-wrap:wrap!important; gap:7px 12px!important; font-size:9px!important; }
+  /* Keep the featured-art card visible on phones instead of dropping it. */
+  .hero-art-new { display:block!important; position:relative!important; width:min(100%,360px)!important; min-height:210px!important; height:auto!important; margin:4px auto 0!important; transform:none!important; }
+  .hero-art-panel { position:relative!important; inset:auto!important; width:82%!important; min-height:180px!important; margin:10px auto 15px!important; }
+  .hero-art-panel img { display:block!important; width:100%!important; height:auto!important; max-height:170px!important; object-fit:contain!important; }
+  .hero-art-ring { display:block!important; }
+  .hero-float-tag { display:flex!important; max-width:46%!important; }
+  .hero-float-tag small { font-size:8px!important; }
+  .hero-spark { display:block!important; }
+
+  .campaign-band { display:block!important; padding:14px 0 18px!important; }
+  .campaign-shell { display:block!important; width:calc(100% - 22px)!important; max-width:none!important; margin:0 auto!important; }
+  .campaign-topline { display:flex!important; align-items:center!important; gap:7px!important; font-size:8px!important; letter-spacing:.08em!important; margin-bottom:9px!important; }
+  .campaign-counter { display:inline!important; margin-left:auto!important; }
+  .campaign-slides { display:block!important; position:relative!important; width:100%!important; height:auto!important; min-height:0!important; aspect-ratio: 1600 / 600!important; overflow:hidden!important; border-radius:12px!important; }
+  .campaign-slide, .campaign-slide.is-active { position:absolute!important; inset:0!important; display:block!important; width:100%!important; height:100%!important; min-height:0!important; padding:0!important; opacity:0!important; visibility:hidden!important; transform:translateX(18px)!important; }
+  .campaign-slide.is-active { opacity:1!important; visibility:visible!important; transform:translateX(0)!important; }
+  .campaign-slide .campaign-visual { display:block!important; position:absolute!important; inset:0!important; width:100%!important; height:100%!important; opacity:1!important; }
+  .campaign-slide .campaign-visual img { display:block!important; position:absolute!important; inset:0!important; width:100%!important; height:100%!important; object-fit:cover!important; object-position:center!important; opacity:1!important; }
+  /* Artwork is already designed as a complete 1600x600 banner; keep it unobstructed. */
+  .campaign-slide .campaign-copy { display:none!important; }
+  .campaign-controls { display:flex!important; position:relative!important; justify-content:center!important; align-items:center!important; gap:13px!important; margin-top:11px!important; }
+  .campaign-dots, .campaign-arrows { display:flex!important; align-items:center!important; gap:7px!important; }
+  .campaign-dot { display:block!important; width:7px!important; height:7px!important; border:0!important; border-radius:99px!important; padding:0!important; }
+  .campaign-dot.active { width:22px!important; }
+  .campaign-arrows button { display:grid!important; place-items:center!important; width:29px!important; height:29px!important; border-radius:50%!important; }
+
+  .metrics { display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr))!important; gap:7px!important; width:calc(100% - 22px)!important; margin:0 auto!important; padding:12px 0 18px!important; }
+  .metric { min-width:0!important; padding:10px 8px!important; }
+  .metric strong { display:block!important; font-size:clamp(10px,2.8vw,13px)!important; line-height:1.3!important; overflow-wrap:anywhere!important; }
+  .metric span { display:block!important; font-size:9px!important; line-height:1.4!important; }
+
+  section.content { display:block!important; width:calc(100% - 24px)!important; max-width:none!important; padding:23px 0 35px!important; }
+  .section-head { display:flex!important; flex-direction:column!important; align-items:flex-start!important; gap:8px!important; }
+  .section-head h2 { font-size:clamp(23px,7vw,29px)!important; }
+  .section-head p { display:block!important; font-size:11px!important; }
+  .store-tabs { display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr))!important; gap:7px!important; }
+  .store-tab { display:flex!important; min-width:0!important; width:100%!important; justify-content:center!important; align-items:center!important; min-height:52px!important; padding:7px 4px!important; font-size:10px!important; line-height:1.25!important; }
+  .product-search { width:100%!important; min-width:0!important; }
+  .product-search input { min-width:0!important; width:100%!important; font-size:13px!important; }
+  .search-hint { display:block!important; font-size:10px!important; line-height:1.5!important; }
+  .games { display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important; gap:10px!important; }
+  .game-card-wrap { display:flex!important; min-width:0!important; }
+  .game-card-wrap .game { width:100%!important; min-width:0!important; }
+  .game-card-wrap .gameart { display:grid!important; height:clamp(105px,31vw,145px)!important; }
+  .game-card-wrap .gbody { display:block!important; min-width:0!important; padding:9px!important; }
+  .game-card-wrap .gbody > strong { font-size:11px!important; overflow-wrap:anywhere!important; }
+  .game-card-wrap .gbody small { font-size:9px!important; line-height:1.4!important; }
+  .product-meta-row { display:flex!important; flex-wrap:wrap!important; gap:4px!important; }
+  .product-meta-chip { font-size:8px!important; white-space:normal!important; }
+  .game-buy-btn { display:flex!important; width:100%!important; justify-content:center!important; font-size:10px!important; padding:9px 5px!important; }
+
+  .pv-whatsapp-support { right:12px!important; bottom:calc(12px + env(safe-area-inset-bottom, 0px))!important; padding:10px 13px!important; font-size:12px!important; z-index:99999!important; }
+  .pv-whatsapp-support svg { width:18px!important; height:18px!important; }
+  .auth-modal, #authModal .auth-dialog, #authModal .auth-card { width:calc(100vw - 24px)!important; max-width:calc(100vw - 24px)!important; max-height:calc(100dvh - 24px)!important; overflow-y:auto!important; }
+  .foot { display:flex!important; flex-direction:column!important; gap:12px!important; }
+  input, select, textarea, button { max-width:100%; }
+}
+@media (max-width: 380px) {
+  body:not(.checkout-mode) > header .brand { flex-basis:100%!important; }
+  body:not(.checkout-mode) > header .nav-actions { flex:1 1 100%!important; justify-content:center!important; margin:0!important; }
+  body:not(.checkout-mode) > header .links { gap:6px 13px!important; }
+  .metrics { grid-template-columns:1fr!important; }
+  .metric { display:block!important; }
+  .hero-art-new { min-height:190px!important; }
+  .hero-art-panel { width:84%!important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pixel-particle { animation:none!important; }
+  .campaign-slide, .campaign-slide.is-active { transition:none!important; }
+}
+
+</style>
+</body></html>

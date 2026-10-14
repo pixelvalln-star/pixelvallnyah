@@ -1,0 +1,276 @@
+/*
+  PixelValln SHOP — Mobile responsive patch
+  Tambahkan setelah style.css di index.html:
+  <link rel="stylesheet" href="mobile-responsive-fix.css">
+*/
+@media (max-width: 850px) {
+  body:not(.checkout-mode) > header > .nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    height: auto !important;
+    min-height: 54px !important;
+    padding: 9px 12px !important;
+    gap: 10px !important;
+  }
+
+  body:not(.checkout-mode) > header .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  body:not(.checkout-mode) > header .links {
+    display: flex !important;
+    flex: 1 0 100%;
+    order: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 18px !important;
+    padding: 8px 0 3px;
+    font-size: 12px !important;
+  }
+
+  body:not(.checkout-mode) > header .nav-actions {
+    display: flex !important;
+    flex: 0 1 auto;
+    min-width: 0;
+    gap: 6px !important;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  body:not(.checkout-mode) > header .auth-nav-btn,
+  body:not(.checkout-mode) > header .auth-user-btn {
+    white-space: nowrap;
+    font-size: 11px !important;
+    padding: 8px 10px !important;
+  }
+
+  body:not(.checkout-mode) > header .nav-cta {
+    white-space: nowrap;
+    font-size: 10px !important;
+    padding: 8px 10px !important;
+  }
+
+  body:not(.checkout-mode) > header {
+    position: sticky !important;
+    top: 0 !important;
+    padding: 6px 8px !important;
+    margin-bottom: 0 !important;
+  }
+
+  body:not(.checkout-mode) > header > .nav {
+    width: 100% !important;
+    max-width: 1180px !important;
+    border-radius: 14px !important;
+  }
+
+  html {
+    scroll-padding-top: 125px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  body:not(.checkout-mode) > header > .nav {
+    gap: 7px !important;
+    padding: 8px 9px !important;
+  }
+
+  body:not(.checkout-mode) > header .brand img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  body:not(.checkout-mode) > header .brand-name {
+    font-size: 12px !important;
+  }
+
+  body:not(.checkout-mode) > header .links {
+    gap: 7px 15px !important;
+    font-size: 11px !important;
+  }
+
+  body:not(.checkout-mode) > header .nav-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  body:not(.checkout-mode) > header .nav-cta {
+    display: none !important;
+  }
+
+  body:not(.checkout-mode) > header .auth-nav-btn,
+  body:not(.checkout-mode) > header .auth-user-btn {
+    font-size: 10px !important;
+    padding: 7px 9px !important;
+  }
+
+  .wrap {
+    width: calc(100% - 24px) !important;
+  }
+
+  .hero-rework {
+    padding-top: 24px !important;
+  }
+
+  .hero-inner {
+    padding-top: 22px !important;
+  }
+
+  .hero-copy-new h1 {
+    font-size: clamp(35px, 10vw, 48px) !important;
+    letter-spacing: -1.8px !important;
+  }
+
+  .hero-copy-new p {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .campaign-band,
+  .campaign-shell {
+    width: calc(100% - 20px) !important;
+    max-width: 100% !important;
+  }
+
+  .campaign-slide,
+  .campaign-slide.is-active {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 16 / 7 !important;
+  }
+
+  .campaign-slide .campaign-visual img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .games {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .game-card-wrap {
+    min-width: 0 !important;
+  }
+
+  .game-card-wrap .gameart {
+    height: clamp(105px, 32vw, 145px) !important;
+  }
+
+  .game-card-wrap .gbody {
+    padding: 10px !important;
+  }
+
+  .game-card-wrap .gbody > strong {
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+  }
+
+  .product-meta-row {
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+  }
+
+  .product-meta-chip {
+    font-size: 8px !important;
+  }
+
+  .game-buy-btn {
+    font-size: 11px !important;
+    padding: 10px 7px !important;
+  }
+
+  .section-head {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .section-head h2 {
+    font-size: 26px !important;
+  }
+
+  input, select, textarea, button {
+    max-width: 100%;
+  }
+
+  .auth-modal, #authModal .auth-dialog, #authModal .auth-card {
+    width: calc(100vw - 28px) !important;
+    max-width: calc(100vw - 28px) !important;
+  }
+}
+
+@media (max-width: 360px) {
+  body:not(.checkout-mode) > header .brand-name {
+    font-size: 11px !important;
+  }
+
+  body:not(.checkout-mode) > header .links {
+    gap: 6px 10px !important;
+    font-size: 10px !important;
+  }
+
+  body:not(.checkout-mode) > header .auth-nav-btn,
+  body:not(.checkout-mode) > header .auth-user-btn {
+    font-size: 9px !important;
+    padding: 6px 7px !important;
+  }
+}
+
+
+/* === ACCESSIBILITY PATCH: HERO TEXT CONTRAST ON PIXEL-ART BACKGROUND === */
+.hero-rework .hero-eyebrow {
+  color: #063b60 !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.55);
+}
+.hero-rework .hero-copy-new h1 em {
+  background: linear-gradient(100deg, #0076c8 0%, #008ed4 52%, #087b96 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  filter: drop-shadow(0 1px 0 rgba(255,255,255,.42));
+}
+.hero-rework .hero-copy-new p {
+  color: #082f4b !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.48);
+  font-weight: 550;
+}
+.hero-rework .hero-trustline,
+.hero-rework .hero-trustline span {
+  color: #063754 !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.6);
+  font-weight: 700;
+}
+.hero-rework .hero-trustline i {
+  color: #006da8 !important;
+}
+.hero-rework .hero-button-secondary {
+  color: #ffffff !important;
+  background: rgba(5, 48, 76, .72) !important;
+  border: 1px solid rgba(255,255,255,.78) !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.22);
+  box-shadow: 0 3px 12px rgba(0,35,65,.16);
+}
+.hero-rework .hero-button-secondary:hover {
+  background: rgba(3, 62, 96, .88) !important;
+}
+.hero-rework .hero-art-label,
+.hero-rework .hero-art-footer,
+.hero-rework .hero-float-tag {
+  text-shadow: 0 1px 1px rgba(255,255,255,.3);
+}
+@media (max-width: 680px) {
+  .hero-rework .hero-copy-new p {
+    color: #062b45 !important;
+    font-weight: 600;
+  }
+  .hero-rework .hero-eyebrow {
+    letter-spacing: .1em;
+  }
+}
